@@ -53,7 +53,7 @@ plugins:
       ignore: ["./notebooks/*.ipynb"]
       ignore_h1_titles: False
       include_source: True
-      execute: False
+      execute: True
       theme: dark
   - search
   - mermaid2
