@@ -1,0 +1,76 @@
+site_name: INFO-H-501 Pattern recognition and image analysis
+site_description: INFO-H-501 lecture and labs notes.
+repo_url: https://github.com/odebeir/test_mkdocs
+edit_uri: ""
+use_directory_urls: false
+
+#theme:
+#    name: mkdocs
+#    locale: en
+#    #analytics: {gtag: 'G-274394082'}
+#    highlightjs: true
+#    hljs_languages:
+#        - yaml
+#        - django
+#        - python
+
+#theme:
+#    name: readthedocs
+#    highlightjs: true
+#    hljs_languages:
+#        - python
+
+theme:
+  name: material
+  custom_dir: overrides
+  highlightjs: true
+  hljs_languages:
+    - python
+#  palette:
+#    scheme: slate
+
+#extra_css: [extra.css]
+extra_css:
+  - stylesheets/extra.css
+#
+#extra_javascript:
+#    - javascripts/embed-amd.js
+#    - javascripts/require.min.js
+
+
+copyright: <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /> maintained by </a>Olivier Debeir and <a href="">contributors</a>.
+
+nav:
+  - Introduction: index.md
+  - 1. Classical approach: classical.md
+  - 2. Deep neural networks: dnn.md
+  - LABS: labs.md
+  - References: references.md
+  - About: about.md
+
+plugins:
+  - mkdocs-jupyter:
+      ignore: ["./notebooks/*.ipynb"]
+      ignore_h1_titles: False
+      include_source: True
+      execute: False
+      theme: dark
+  - search
+  - mermaid2
+#  - pdf-export
+  - bibtex:
+      bib_file: "refs.bib"
+
+markdown_extensions:
+  - toc:
+      permalink: 
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - def_list
+  - footnotes
+#  - pymdownx.superfences:
+#      custom_fences:
+#        - name: mermaid
+#          class: mermaid
+#          format: !!python/name:pymdownx.superfences.fence_code_format

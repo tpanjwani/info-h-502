@@ -1,0 +1,10 @@
+.idea/
+site/
+.ipynb_checkpoints/
+docs/data/CIFAR10/
+docs/data/GroundTruth/
+docs/data/Video/
+__pycache__/
+*.zip
+*.npy
+extern_data/
