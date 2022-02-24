@@ -1,6 +1,6 @@
 site_name: INFO-H-501 Pattern recognition and image analysis
 site_description: INFO-H-501 lecture and labs notes.
-repo_url: https://github.com/odebeir/test_mkdocs
+repo_url: https://github.com/odebeir/info-h-501
 edit_uri: ""
 use_directory_urls: false
 
@@ -53,7 +53,7 @@ plugins:
       ignore: ["./notebooks/*.ipynb"]
       ignore_h1_titles: False
       include_source: True
-      execute: True
+      execute: False
       theme: dark
   - search
   - mermaid2
