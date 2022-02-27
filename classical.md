@@ -1,5 +1,8 @@
 # Classical approach
 
+[Image processing chain](./notebooks/image_processing_chain.ipynb)
+
+
 ## Object detection and segmentation
 
 [see INF0-H-500](https://odebeir.github.io/info-h-500/)
