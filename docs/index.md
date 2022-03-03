@@ -26,5 +26,3 @@ More specificaly:
 In parallel to the lectures, a serie of labs are is organized. 
 The student are invited to reuse lecture material given as Jupyter Python Notebooks during the laboratory.
 
-\bibliography
-

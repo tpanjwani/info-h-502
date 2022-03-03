@@ -47,3 +47,4 @@ Shai Avidan and Ariel Shamir. Seam carving for content-aware image resizing. In 
 Antoni Buades, Bartomeu Coll, and J-M Morel. A non-local algorithm for image denoising. In 2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'05), volume 2, 60–65. IEEE, 2005. 
 
 Wei-Ying Ma and Bangalore S Manjunath. Edgeflow: a technique for boundary detection and image segmentation. IEEE transactions on image processing, 9(8):1375–1388, 2000. 
+

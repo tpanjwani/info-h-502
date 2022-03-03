@@ -50,7 +50,7 @@ nav:
 
 plugins:
   - mkdocs-jupyter:
-      ignore: ["./notebooks/*.ipynb"]
+      ignore: ["demo/*.*"]
       ignore_h1_titles: False
       include_source: True
       execute: False

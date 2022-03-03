@@ -11,12 +11,14 @@
       var code_shown = false;
       function code_toggle() {
         if (code_shown){
-          $('div.input').hide('500');
-          $('div.jp-InputArea').hide('500')
+<!--          $('div.input').hide('500');-->
+<!--          $('div.jp-InputArea').hide('500')-->
+          $('div.jp-CodeMirrorEditor').hide('500')
           $('#toggleButton').val('Show Code')
         } else {
-          $('div.input').show('500');
-          $('div.jp-InputArea').show('500')
+<!--          $('div.input').show('500');-->
+<!--          $('div.jp-InputArea').show('500')-->
+          $('div.jp-CodeMirrorEditor').show('500')
           $('#toggleButton').val('Hide Code')
         }
         code_shown = !code_shown
@@ -25,7 +27,8 @@
       $( document ).ready(function(){
         code_shown=false;
         $('div.input').hide()
-        $('div.jp-InputArea').hide()
+<!--        $('div.jp-InputArea').hide()-->
+        $('div.jp-CodeMirrorEditor').hide()
       });
     </script>
     <form action="javascript:code_toggle()">
