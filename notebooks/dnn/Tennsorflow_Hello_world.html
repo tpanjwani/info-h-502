@@ -1456,8 +1456,8 @@ predictions</div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[5]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([[-0.27184802,  0.26943633,  0.8005032 ,  0.72013587, -0.32639125,
-         0.29869905,  0.16942427, -0.5201895 , -0.3803794 , -0.13155544]],
+<pre>array([[-0.26215118, -0.25882939,  0.19929075,  0.12261799,  0.45850027,
+        -0.37237313,  0.04984686, -0.740847  , -0.26787496, -0.12749039]],
       dtype=float32)</pre>
 </div>
 </div>
@@ -1497,8 +1497,8 @@ predictions</div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[6]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>array([[0.06478478, 0.11131401, 0.18931682, 0.17469727, 0.06134585,
-        0.11461949, 0.10071985, 0.05053819, 0.05812172, 0.07454204]],
+<pre>array([[0.08240929, 0.0826835 , 0.13073078, 0.12108193, 0.16941471,
+        0.07380868, 0.11258362, 0.05106005, 0.08193894, 0.09428848]],
       dtype=float32)</pre>
 </div>
 </div>
@@ -1597,22 +1597,22 @@ predictions</div>
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Epoch 1/5
-1875/1875 [==============================] - 2s 853us/step - loss: 0.3014 - accuracy: 0.9122
+1875/1875 [==============================] - 2s 871us/step - loss: 0.2922 - accuracy: 0.9152
 Epoch 2/5
-1875/1875 [==============================] - 2s 844us/step - loss: 0.1439 - accuracy: 0.9575
+1875/1875 [==============================] - 2s 867us/step - loss: 0.1423 - accuracy: 0.9571
 Epoch 3/5
-1875/1875 [==============================] - 2s 853us/step - loss: 0.1079 - accuracy: 0.9669
+1875/1875 [==============================] - 2s 851us/step - loss: 0.1043 - accuracy: 0.9688
 Epoch 4/5
-1875/1875 [==============================] - 2s 847us/step - loss: 0.0891 - accuracy: 0.9730
+1875/1875 [==============================] - 2s 856us/step - loss: 0.0864 - accuracy: 0.9728
 Epoch 5/5
-1875/1875 [==============================] - 2s 852us/step - loss: 0.0768 - accuracy: 0.9761
+1875/1875 [==============================] - 2s 859us/step - loss: 0.0733 - accuracy: 0.9771
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>&lt;tensorflow.python.keras.callbacks.History at 0x7fe73dd765d0&gt;</pre>
+<pre>&lt;tensorflow.python.keras.callbacks.History at 0x7fd7c5a0e9d0&gt;</pre>
 </div>
 </div>
 </div>
@@ -1651,14 +1651,14 @@ Epoch 5/5
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>313/313 - 0s - loss: 0.0777 - accuracy: 0.9774
+<pre>313/313 - 0s - loss: 0.0774 - accuracy: 0.9753
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>[0.07768809050321579, 0.977400004863739]</pre>
+<pre>[0.07741128653287888, 0.9753000140190125]</pre>
 </div>
 </div>
 </div>
@@ -1707,21 +1707,21 @@ probability_model(x_test[:5])
 <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
 <pre>&lt;tf.Tensor: shape=(5, 10), dtype=float32, numpy=
-array([[6.46119886e-08, 4.83063793e-08, 4.10808680e-05, 2.64607050e-04,
-        3.01784856e-12, 8.21269907e-07, 5.69369205e-13, 9.99684334e-01,
-        2.05567176e-06, 7.14732005e-06],
-       [1.72280366e-07, 2.38767116e-05, 9.99959707e-01, 8.81881078e-06,
-        1.14778534e-15, 6.16765874e-06, 7.59653233e-07, 9.84979378e-15,
-        5.86265344e-07, 1.25972190e-13],
-       [1.63803691e-07, 9.99325395e-01, 2.62464600e-04, 2.60056481e-06,
-        4.64254954e-05, 4.68644384e-06, 1.01835125e-04, 1.54060603e-04,
-        1.02370090e-04, 4.96005903e-08],
-       [9.99951959e-01, 8.74094741e-10, 3.99618693e-05, 1.99791792e-08,
-        7.75568676e-09, 2.04278263e-06, 5.12878614e-06, 8.68102290e-07,
-        1.32165123e-09, 2.03175468e-08],
-       [3.20988170e-06, 7.01418146e-10, 2.57953325e-05, 5.43937695e-08,
-        9.90219772e-01, 2.46517345e-07, 3.41999003e-05, 3.81534424e-04,
-        2.15842374e-05, 9.31365974e-03]], dtype=float32)&gt;</pre>
+array([[2.3262034e-07, 1.1792521e-08, 1.2659224e-05, 1.9736012e-04,
+        2.4357347e-09, 1.2156168e-07, 1.6662408e-12, 9.9978441e-01,
+        1.1889212e-07, 5.1018933e-06],
+       [1.6484260e-07, 2.0526930e-05, 9.9985301e-01, 1.1785225e-04,
+        5.5575401e-13, 3.0955143e-06, 4.1588822e-07, 4.7661493e-11,
+        5.0086414e-06, 4.8102375e-13],
+       [5.9924020e-08, 9.9937987e-01, 3.7789949e-05, 7.7354143e-06,
+        1.7690134e-05, 6.9191119e-06, 1.2870405e-06, 3.8235279e-04,
+        1.6614169e-04, 2.1280152e-07],
+       [9.9995232e-01, 2.0344408e-10, 6.8584250e-06, 3.5998653e-07,
+        1.4929981e-06, 1.0480732e-05, 2.1428827e-05, 3.4892539e-06,
+        1.9210242e-06, 1.6654786e-06],
+       [4.5011639e-06, 2.2021180e-08, 2.2981299e-06, 4.7929625e-08,
+        9.9565190e-01, 1.4058639e-06, 6.6035864e-06, 1.5305394e-03,
+        1.6625662e-06, 2.8010148e-03]], dtype=float32)&gt;</pre>
 </div>
 </div>
 </div>
