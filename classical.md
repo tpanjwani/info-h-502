@@ -38,11 +38,12 @@
 
 ## Vision
 
+[Vision](./notebooks/vision.ipynb)
+
 [Vision (pdf version)](pdf/vision.pdf)
 
 
 ## Misc. Material (work in progress)
 
-[Vision](./notebooks/vision.ipynb)
 
 [Playing with dicom files](./notebooks/dicom.ipynb)
