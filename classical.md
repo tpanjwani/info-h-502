@@ -25,22 +25,19 @@
 
 [Detectors (pdf version)](pdf/detectors.pdf)
 
-
-## Object recognition
-
-[Object recognition (pdf version)](pdf/recognition.pdf)
-
-
-## Tracking
-
-[Tracking (pdf version)](pdf/tracking.pdf)
-
-
 ## Vision
 
 [Vision](./notebooks/vision.ipynb)
 
 [Vision (pdf version)](pdf/vision.pdf)
+
+## Object recognition
+
+[Object recognition (pdf version)](pdf/recognition.pdf)
+
+## Tracking
+
+[Tracking (pdf version)](pdf/tracking.pdf)
 
 
 ## Misc. Material (work in progress)

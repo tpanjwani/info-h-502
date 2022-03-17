@@ -1376,11 +1376,12 @@ Licensed under the Apache License, Version 2.0.
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="extrinsic-parameters">Extrinsic parameters<a class="anchor-link" href="#extrinsic-parameters">¶</a></h2><p>The combination of translation and rotation is called the <strong>extrinsic parameters</strong> of the camera.</p>
+<h2 id="extrinsic-parameters">Extrinsic parameters<a class="anchor-link" href="#extrinsic-parameters">¶</a></h2><p>The combination of translation and rotation is called the <strong>extrinsic parameters</strong> of the camera. Using the homogeneous coordinates:</p>
 <p>$\begin{bmatrix}
     X_c  \\
     Y_c  \\
     Z_c  \\
+    1
   \end{bmatrix} = \begin{bmatrix}
 \mathbf{R} | \mathbf{T}\end{bmatrix}
     \begin{bmatrix}
@@ -1389,6 +1390,10 @@ Licensed under the Apache License, Version 2.0.
     Z_w  \\
     1
   \end{bmatrix}$</p>
+<p>and</p>
+<p>$\begin{bmatrix}
+\mathbf{R} | \mathbf{T}\end{bmatrix} = \begin{bmatrix}\mathbf{R}_{3 \times 3} &amp; \mathbf{T}_{3 \times 1} \\
+0_{1 \times 3} &amp; 1\end{bmatrix}_{4 \times 4}$</p>
 </div>
 </div>
 </div>
@@ -1490,10 +1495,10 @@ Z_{w}\\
 1\end{bmatrix}$</p>
 <p>where $M = K\, \begin{bmatrix} R | T\end{bmatrix}$</p>
 <p>$K=\begin{bmatrix}
-f_{x} &amp; \gamma &amp; c_{x} \\
-0 &amp; f_{y} &amp; c_{y} \\
-0 &amp; 0 &amp; 1 \end{bmatrix}$</p>
-<p>is the <strong>intrinsic matrix</strong></p>
+f_{x} &amp; \gamma &amp; c_{x} &amp; 0\\
+0 &amp; f_{y} &amp; c_{y} &amp; 0\\
+0 &amp; 0 &amp; 1 &amp;0 \end{bmatrix}$</p>
+<p>is the <strong>intrinsic matrix</strong> using homogeneous coordinates</p>
 <p>and $ \begin{bmatrix} R | T\end{bmatrix}$ the <strong>extrinsic parameters</strong></p>
 </div>
 </div>
