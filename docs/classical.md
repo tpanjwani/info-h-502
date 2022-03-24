@@ -29,6 +29,8 @@
 
 [Vision](./notebooks/vision.ipynb)
 
+[Stereo](./notebooks/vision.ipynb)
+
 [Vision (pdf version)](pdf/vision.pdf)
 
 ## Object recognition
